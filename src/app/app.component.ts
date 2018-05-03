@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { CreatePage } from '../pages/create/create';
 import { CartPage } from '../pages/cart/cart';
 import { FollowPage } from '../pages/follow/follow';
+import { MyselfPage } from '../pages/myself/myself';
 
 import { ContactPage } from '../pages/contact/contact';
 import { AddPage } from '../pages/add/add';
@@ -22,7 +23,7 @@ import { NavController } from 'ionic-angular/navigation/nav-controller';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = TabsPage;
+  rootPage: any = FirstPage;
   @ViewChild(Nav) nav: Nav;
   page: Array<{ title: string, component: any, icon: String }>
 
@@ -43,6 +44,7 @@ export class MyApp {
       { title: 'ติดตาม', icon: 'md-boat', component: FollowPage },
       { title: 'ตะกร้าสินค้า', icon: 'md-cart', component: CartPage },
       { title: 'เพิ่มรายการอาหาร', icon: 'md-add', component: AddPage },
+      { title: 'ผู้จัดทำ', icon: 'md-game-controller-b', component: MyselfPage },
     ]
   }//constructor
   goPage(page) {

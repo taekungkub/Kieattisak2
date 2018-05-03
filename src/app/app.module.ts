@@ -20,6 +20,8 @@ import { DetailPage } from '../pages/detail/detail';
 import { FollowPage } from '../pages/follow/follow';
 import { RicePage } from '../pages/rice/rice';
 import { AddPage } from '../pages/add/add';
+import { MyselfPage } from '../pages/myself/myself';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -38,7 +40,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailPage,
     FollowPage,
     RicePage,
-    AddPage
+    AddPage,
+    MyselfPage
     
   ],
   imports: [
@@ -60,7 +63,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailPage,
     FollowPage,
     RicePage,
-    AddPage
+    AddPage,
+    MyselfPage
   ],
   providers: [
     StatusBar,
