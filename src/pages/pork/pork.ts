@@ -25,34 +25,34 @@ export class PorkPage {
       {
         id:1,
         image:"7.png",
-        title:"สลัดแฮม น้ำข้น",
+        name:"สลัดแฮม น้ำข้น",
         description:"ไว้ทานเล่นข้างเคียงกับเมนูหลัก ออกรสเปรี้ยวจากน้ำสลัด",
         price:89,
-        cout:1
+        cost:1
       },
       {
         id:2,
         image:"8.jpg",
-        title:"ข้าวสวย",
+        name:"ข้าวสวย",
         description:"ข้าวสวยหอมๆ สุกร้อนๆ น่ารับประทาน",
         price:20,
-        cout:1
+        cost:1
       },
       {
         id:3,
         image:"9.jpg",
-        title:"น้ำจิ้มแจ่ว (กระปุก)",
+        name:"น้ำจิ้มแจ่ว (กระปุก)",
         description:"น้ำจิ้มสูตรเด็ด แซ่บอร่อยถึงใจ",
         price:29,
-        cout:1
+        cost:1
       },
       {
         id:4,
         image:"10.jpg",
-        title:" มันอบ Jacket Potato",
+        name:" มันอบ Jacket Potato",
         description:" มันอบ Jacket Potato นุ่มหอมอร่อยถึงใจ",
         price:49,
-        cout:1
+        cost:1
       }
 
      

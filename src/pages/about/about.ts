@@ -16,26 +16,26 @@ export class AboutPage {
       {
         id:1,
         image:"5.png",
-        title:"สันคอหมูอบ",
+        name:"สันคอหมูอบ",
         description:"รสชาติเปรี้ยว แซ่บ ด้วยสารพัดเครื่องปรุงไทยๆโรยด้วยข้าวคั่ว กลิ่นหอมโดนใจ",
         price:130,
-        cout:1
+        cost:1
       },
       {
         id:2,
         image:"6.png",
-        title:"คอหมูสูตร Honey",
+        name:"คอหมูสูตร Honey",
         description:"สูตร Honey อบน้ำผึ้ง กลมกล่อมเป็นเอกลักษณ์ น้ำหมักซึมเข้าถึงตัวเนื้อ",
         price:150,
-        cout:1
+        cost:1
       },
       {
         id:3,
         image:"16.jpg",
-        title:"สันคอหมูสูตร Honey",
+        name:"สันคอหมูสูตร Honey",
         description:"สันคอหมูสูตร Honey สันคอหมูลาบแซ่บ",
         price:160,
-        cout:1
+        cost:1
       }
   ] //item
 

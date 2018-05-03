@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { NavController, AlertController , LoadingController } from 'ionic-angular';
 
 import { CreatePage } from '../create/create';
 
@@ -15,9 +15,10 @@ export class ContactPage {
     email: String;
     tel: String;
   }
+  public backgroundImage = 'assets/imgs/BackgroundLogin.jpg';
 
-
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController,
+               public loadingCtrl: LoadingController,) {
 
 
   }
@@ -39,25 +40,26 @@ export class ContactPage {
   note: any;
   noteAlert: any;
 
-  Login() {
-
-    console.log("Name : ", this.username, "Password", this.password);
+  login() {
+    const loading = this.loadingCtrl.create({
+      duration: 500
+    }); 
 
     if ((this.username == null) && (this.password == null)) {
-      this.noteAlert = "กรุณาใส่ Username หรือ Password ค่ะ"
-      let alert = this.alertCtrl.create({
-        title: 'Error',
+    this.noteAlert = "กรุณาใส่ Username หรือ Password ค่ะ"
+    loading.onDidDismiss(() => {
+      const alert = this.alertCtrl.create({
+        title: 'พบข้อผิดพลาด',
         subTitle: this.noteAlert,
         buttons: ['OK']
       });
       alert.present();
-    }
+    });
 
+    loading.present();
 
-  } //BMI
-
-
-
+  }
+}
 
 
 } 

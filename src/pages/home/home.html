@@ -19,24 +19,44 @@
 
 
 <ion-content padding style="background-color: #eaeaeb;">
-              
-    <ion-card *ngFor="let item of items">
+                
+    <ion-card *ngFor="let item of itemFirst">
         <img src="assets/imgs/rec/{{item.image}}" (click)="OpenDetailPage(item)">
         <ion-card-content>
             <ion-card-title color="title2">
-                {{item.title}}
+                {{item.name}}
             </ion-card-title>
             <p>{{item.description}}</p>
         </ion-card-content>
         <ion-row padding>
             <ion-col ion-button clear border-bottom>
-                <h2>{{item.price}} THB</h2>
+            <h2>{{item.price}} THB</h2>
             </ion-col>
             <ion-col ion-button round color="order" (click)="insertItem()">
                 <h1>สั่งซื้อ</h1>
             </ion-col>
         </ion-row>
-        
     </ion-card>
+
+                  
+    <ion-card *ngFor="let item of items">
+                <img  src="assets/imgs/photo.png" style="height:100%;width:100%;" (click)="OpenDetailPage(item)">
+    
+            <ion-card-content>
+                <ion-card-title color="title2">
+                    {{item.name}} 
+                </ion-card-title>
+                <p>{{item.description}}</p>
+            </ion-card-content>
+            <ion-row padding>
+                <ion-col ion-button clear border-bottom>
+                <h2>{{item.price}} THB</h2>
+                </ion-col>
+                <ion-col ion-button round color="order" (click)="insertItem()">
+                    <h1>สั่งซื้อ</h1>
+                </ion-col>
+            </ion-row>
+            <button ion-button full  outline  color="primary" icon-only (click)="viewEntry({ record: item })">แก้ไข</button>
+        </ion-card>
 
 </ion-content>

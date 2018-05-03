@@ -14,21 +14,22 @@ export class DetailPage {
   cart = [];
   constructor(public navCtrl: NavController, public navParams: NavParams , params: NavParams) {
     this.item = params.data.item;
+  
 
   }
 
   cout:number;
 
   addPlus(item){
-    item.cout +=1;
+    item.cost +=1;
  
 
   }
   subTrack(item){
-    if (item.cout === 1) {
+    if (item.cost === 1) {
       return;
     }
-    item.cout -=1;
+    item.cost -=1;
   }
 
   OpenCartPage() {

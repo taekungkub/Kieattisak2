@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -15,6 +19,7 @@ import { PorkPage } from '../pages/pork/pork';
 import { DetailPage } from '../pages/detail/detail';
 import { FollowPage } from '../pages/follow/follow';
 import { RicePage } from '../pages/rice/rice';
+import { AddPage } from '../pages/add/add';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,12 +37,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PorkPage,
     DetailPage,
     FollowPage,
-    RicePage
+    RicePage,
+    AddPage
     
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -52,7 +59,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PorkPage,
     DetailPage,
     FollowPage,
-    RicePage
+    RicePage,
+    AddPage
   ],
   providers: [
     StatusBar,
