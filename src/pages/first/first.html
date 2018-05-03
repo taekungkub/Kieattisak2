@@ -1,0 +1,47 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/ribs.svg">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-content>
+  <ion-slides pager>
+    <!-- style=" background-image:url('assets/imgs/1.jpg'); height:100%; width:100%;" -->
+
+    <ion-slide style="background-color: #eaeaeb">
+        <div padding>
+          <img src="assets/imgs/pigTest.png" style="height:30%; width:30%;" text-center>
+          <h1 style="color: #ffc107;">ซี่โครงหมู</h1>
+          <p>เนื้อหนานุ่ม น้ำหมักซึมเข้าถึงตัวเนื้อ มีมันแทรกกำลังดี กระดูกอ่อนแทะอร่อย</p>
+        </div>
+        <div style="margin-bottom:70px;">
+          <button ion-button color="order" round large (click)="OpenTabsPage()">สั่งเลย</button>
+        </div>
+      </ion-slide>
+  
+
+    <ion-slide style="background-color: #ffffff">
+      <div padding>
+        <img src="assets/imgs/pig.png" style="height:45%; width:45%; margin-right:25px;">
+        <h1 style="color: #ffc107;">BABY BACK RIBS</h1>
+        <p>ส่วนซี่โครงอ่อน นุ่ม เนื้อเยอะ มีกระดูกอ่อนให้เคี้ยวกรุป</p>
+      </div>
+      <div style="margin-bottom:70px;">
+        <button ion-button color="order" round large (click)="OpenTabsPage()">สั่งเลย</button>
+      </div>
+    </ion-slide>
+
+    <ion-slide style="background-color: #eaeaeb">
+      <div padding>
+        <img src="assets/imgs/pig2.png" style="height:45%; width:45%; margin-right:25px;">
+        <h1 style="color: #ffc107;">ST.LOUIS RIBS</h1>
+        <p>ส่วนสแปร์ริบส์ ซอสฮันนี่ รสชาติเข้มข้น ร่อนออกจากกระดูก</p>
+      </div>
+      <div style="margin-bottom:70px;">
+        <button ion-button color="order" round large (click)="OpenTabsPage()">สั่งเลย</button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar color="title2">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title text-center>P O R K</ion-title>
+        <ion-buttons end (click)="OpenCartPage()">
+            <button ion-button icon-only>
+                <ion-icon name="md-cart"></ion-icon>
+                <ion-badge color="order">0</ion-badge>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding style="background-color: #eaeaeb;">
+    <ion-card *ngFor="let item of items">
+        <img src="assets/imgs/rec/{{item.image}}" (click)="OpenDetailPage(item)">
+        <ion-card-content>
+            <ion-card-title color="title2">
+                {{item.title}}
+            </ion-card-title>
+            <p>{{item.description}}</p>
+        </ion-card-content>
+        <ion-row padding>
+            <ion-col ion-button clear>
+                <h2>{{item.price}} THB</h2>
+            </ion-col>
+            <ion-col ion-button round color="order">
+                <h1>สั่งซื้อ</h1>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,57 @@
+<!--
+  Generated template for the DetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="title2">
+
+
+    <ion-title>{{item.title}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="OpenCartPage()">
+        <ion-icon name="md-cart"></ion-icon>
+        <ion-badge color=order>0</ion-badge>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <img src="assets/imgs/rec/{{item.image}}">
+  <ion-item>
+    <h1>{{item.title}}</h1>
+  </ion-item>
+  <ion-item>
+    <p>จำนวน</p>
+    <button ion-button clear icon-only item-end (click)="subTrack(item)">
+      <ion-icon name="md-remove-circle" color="dark"></ion-icon>
+    </button>
+    <label item-end>{{item.cout}}</label>
+    <button ion-button clear icon-only item-end (click)="addPlus(item)">
+      <ion-icon name="md-add-circle" color="dark"></ion-icon>
+    </button>
+    <div item-end style="margin-left: 150px;"></div>
+  </ion-item>
+
+  <ion-item>
+    <p>ราคารวม </p>
+    <p item-end style="margin-right: 175px;">{{item.price * item.cout}} THB</p>
+  </ion-item>
+  <ion-item>
+    <button ion-button full large round color="order" icon-only>เพิ่มในตะกร้า
+      <ion-icon name="md-cart" large color="dark"></ion-icon>
+    </button>
+  </ion-item>
+
+
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="title2">
+    <ion-title>
+      เข้าสู่ระบบ
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full icon-only (click)="Login()">
+    <ion-icon name="md-log-in"></ion-icon>เข้าสู่ระบบ</button>
+  <br>
+  <button ion-button outline full>ลืมรหัสผ่าน</button>
+  <br>
+  <button ion-button full color="create" (click)="CreateAccount()">สร้างบัญชี</button>
+
+
+
+
+
+</ion-content>

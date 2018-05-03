@@ -1,0 +1,8 @@
+{
+  "name": "Kieattisak2",
+  "app_id": "77f218c8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
